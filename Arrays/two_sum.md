@@ -46,7 +46,7 @@ target = 9
 
 **Output:**
 ```
-
+[0, 1]
 ```
 
 ---
@@ -76,4 +76,3 @@ target = 9
 - Best example of a **space–time tradeoff**.  
 - A classic **hashing pattern** problem.  
 ```
-
