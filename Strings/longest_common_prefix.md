@@ -36,52 +36,39 @@
 
 ---
 
-### 🧪 Example Walkthrough
 
-#### Example 1
-```text
-Input: ["flower", "flow", "flight"]
+## 🧪 Step-by-Step Walkthrough
 
-## Step-by-step
+### Example 1
+
+**Input:** `["flower", "flow", "flight"]`
 
 | Step | Prefix | Current Word | Result |
-|------|---------|---------------|---------|
-| Start | "flower" | — | Initial prefix |
-| 1 | "flower" | "flow" | Not matching → shorten |
-| 2 | "flow" | "flow" | Match |
-| 3 | "flow" | "flight" | Not matching → shorten |
-| 4 | "fl" | "flight" | Match |
+| :--- | :--- | :--- | :--- |
+| **Start** | `"flower"` | — | Initial prefix |
+| **1** | `"flower"` | `"flow"` | Not matching → shorten |
+| **2** | `"flow"` | `"flow"` | Match |
+| **3** | `"flow"` | `"flight"` | Not matching → shorten |
+| **4** | `"fl"` | `"flight"` | Match |
 
-**Output:**
-```
-"fl"
-```
+**Output:** `"fl"`
 
 ---
 
-## Example 2
-
-**Input:**
-```
-["dog", "racecar", "car"]
-```
+### Example 2
+**Input:** `["dog", "racecar", "car"]`
 
 | Step | Prefix | Current Word | Result |
-|------|---------|---------------|---------|
-| Start | "dog" | — | Initial prefix |
-| 1 | "dog" | "racecar" | No match → shorten |
-| 2 | "" | — | Prefix empty |
+| :--- | :--- | :--- | :--- |
+| **Start** | `"dog"` | — | Initial prefix |
+| **1** | `"dog"` | `"racecar"` | No match → shorten |
+| **2** | `""` | — | Prefix empty |
 
-**Output:**
-```
-""
-```
+**Output:** `""`
 
 ---
 
-## ⚠️ Edge Cases
-
-- Array contains an empty string → return `""`  
-- Only one string → return that string  
-- No common prefix → return `""`  
-```
+### ⚠️ Edge Cases
+* **Array contains an empty string:** Return `""`
+* **Only one string in array:** Return that string
+* **No common prefix:** Return `""`
